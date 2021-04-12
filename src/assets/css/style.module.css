@@ -1,0 +1,102 @@
+.circleButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 40px;
+}
+.singleToDo{
+    position: relative;
+    border: 1px solid;
+    padding: 5px    ;
+}
+.rowBtn{
+    background-color: transparent !important;
+    color: #fb61bd;
+    border: none;
+}
+.rowBtn:hover{
+    color: darkblue;
+}
+.rowBtn:focus{
+    color: #fb61bd;
+}
+.toDoTitle{
+    text-align: center;
+}
+.toDoDate{
+    margin-right: 20px;
+    width: 100px;
+    text-align: center;
+    font-size: 11px;
+    color: gray;
+
+}
+.toDoName{
+    width: 160px;
+    margin-right: 20px;
+}
+.checkbox{
+    width: 50px;
+}
+.deleteButtonCont{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    text-align: right;
+}
+.toDoDesc{
+    width: 200px;
+    padding: 0 15px;
+}
+.selected{
+    background: rgba(0,0,0,.3);
+}
+
+.h60{
+    overflow: auto;
+    max-height: 50%;
+}
+/* width */
+.h60::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+.h60::-webkit-scrollbar-track {
+    background: gray;
+}
+
+/* Handle */
+.h60::-webkit-scrollbar-thumb {
+    background: burlywood;
+}
+
+/* Handle on hover */
+.h60::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.toDoStatus{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.toDoActive{
+    background: darkblue;
+}
+.toDoDone{
+    background: cornflowerblue;
+}
+.toDoStatusText{
+    font-size: 12px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.rowBtn.disabled, .rowBtn:disabled{
+    color: darkblue !important;
+    opacity: .2;
+}
